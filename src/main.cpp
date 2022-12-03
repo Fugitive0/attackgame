@@ -25,31 +25,31 @@ Things that the difficulty will positivitly affect
 
 int gameDifficulty(int difficulty)
 {
-  if (difficulty = 1)
+  if (difficulty == 1)
   {
     OVERALL_ENEMY_DAMAGE += 3;
     EXP_PERCENTAGE += 6;
     MONEY_PERCENTAGE += 6;
   }
-  if (difficulty = 2)
+  if (difficulty == 2)
   {
     OVERALL_ENEMY_DAMAGE += 6;
     EXP_PERCENTAGE += 12;
     MONEY_PERCENTAGE += 12;
   }
-  if (difficulty = 3)
+  if (difficulty == 3)
   {
     OVERALL_ENEMY_DAMAGE += 9;
     EXP_PERCENTAGE += 18;
     MONEY_PERCENTAGE += 18;
   }
-  if (difficulty = 4)
+  if (difficulty == 4)
   {
     OVERALL_ENEMY_DAMAGE += 12;
     EXP_PERCENTAGE += 24;
     MONEY_PERCENTAGE += 24;
   }
-  if (difficulty = 5)
+  if (difficulty == 5)
   {
     OVERALL_ENEMY_DAMAGE += 15;
     EXP_PERCENTAGE += 30;
@@ -60,32 +60,74 @@ int gameDifficulty(int difficulty)
   
 }
 
-void gameloop ()
+/*
+The menu function have an interger paramerter and if that number is a specific number,
+will take them to a specific part of the menu
+
+1. Start
+will start the game
+
+2. Level up
+will level up the character according to how much exp they have
+leveling: 
+1 = 100/ 2 = 200 / 3 = 400 / 4 = 500 / ...
+
+3. Exit
+leave the game
+
+*/
+
+void gameloop()
 {
-
-
-
-
-
-
-
+  cout << "Game loop";
 }
-
-
-
-
 
 
 
 void levelup()
 {
+  cout << "Level up";
+}
+
+
+
+ 
 
 
 
 
+int menu (int number) 
+{
 
+if (number == 1)
+{
+  gameloop();
+}
+
+if (number == 2)
+{
+  levelup();
+}
+
+if (number == 3)
+{
+   return -1;
+}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 int main ()
 {
@@ -98,6 +140,7 @@ int main ()
   cout << endl;
 
   gameDifficulty(difficultyInput);
+  cout << OVERALL_ENEMY_DAMAGE << endl;
   
 
   // Menu
@@ -106,20 +149,14 @@ int main ()
        << endl
        << "2. Level up"
        << endl
-       << "3. Start"
-       << endl
-       << "4. Exit"
+       << "3. Exit"
        << endl;
 
-  cin >> menuSelection;
+cin >> menuSelection;
 
-  int menu(menuSelection);
-
-
-  
-
-
-
-  // Game loop
+menu(menuSelection);
 
 }
+
+
+
