@@ -60,8 +60,32 @@ int gameDifficulty(int difficulty)
   
 }
 
+void gameloop ()
+{
 
 
+
+
+
+
+
+}
+
+
+
+
+
+
+
+void levelup()
+{
+
+
+
+
+
+
+}
 
 int main ()
 {
@@ -71,18 +95,28 @@ int main ()
        << "Select a difficulty between 1 and 5"
        << endl;
   cin >> difficultyInput;
+  cout << endl;
 
   gameDifficulty(difficultyInput);
   
 
+  // Menu
+  int menuSelection = 0;
+  cout << "1. Play"
+       << endl
+       << "2. Level up"
+       << endl
+       << "3. Start"
+       << endl
+       << "4. Exit"
+       << endl;
+
+  cin >> menuSelection;
+
+  int menu(menuSelection);
 
 
-
-
-
-
-
-
+  
 
 
 
