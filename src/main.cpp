@@ -77,10 +77,6 @@ leave the game
 
 */
 
-void gameloop()
-{
-  cout << "Game loop";
-}
 
 
 
@@ -96,32 +92,39 @@ void levelup()
 
 
 
-int menu (int number) 
+void menu () 
 {
 
-if (number == 1)
+int menuSelection = 0;
+  cout << "1. Play"
+       << endl
+       << "2. Level up"
+       << endl
+       << "3. Exit"
+       << endl;
+  cin >> menuSelection;
+
+
+
+
+if (menuSelection == 1)
 {
-  gameloop();
+  cout << "Starting preGameLoop";
 }
 
-if (number == 2)
+if (menuSelection == 2)
 {
   levelup();
+  menu();
+
 }
 
-if (number == 3)
+if (menuSelection == 3)
 {
-   return -1;
+  cout << "thanks for playing";
 }
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -142,19 +145,22 @@ int main ()
   gameDifficulty(difficultyInput);
   cout << OVERALL_ENEMY_DAMAGE << endl;
   
+menu();
 
-  // Menu
-  int menuSelection = 0;
-  cout << "1. Play"
-       << endl
-       << "2. Level up"
-       << endl
-       << "3. Exit"
-       << endl;
 
-cin >> menuSelection;
+// Pre game loop
 
-menu(menuSelection);
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

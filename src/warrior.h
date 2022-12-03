@@ -7,8 +7,4 @@ class Warrior
 {
   public:
   int health = 75;
-
-
-  
-
 };
