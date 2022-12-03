@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <iostream>
 #include <vector>
-#include <globalVar.h>
+#include "globalVar.h"
 
 using namespace std;
 
