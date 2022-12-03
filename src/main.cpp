@@ -26,45 +26,8 @@ Things that the difficulty will positivitly affect
 
 int gameDifficulty(int difficulty)
 {
-  if (difficulty == 1)
-  {
-    int OVERALL_DIFF;
-    int EXP_PERCENTAGE += 25;
-    int MONEY_PERCENTAGE = 15;  
-  }
-  
 
-  if (difficulty == 2)
-  {
-    int OVERALL_DIFF;
-    int EXP_PERCENTAGE = 25;
-    int MONEY_PERCENTAGE = 15;  
-  }
-
-  if (difficulty == 3)
-  {
-    int OVERALL_DIFF;
-    int EXP_PERCENTAGE = 25;
-    int MONEY_PERCENTAGE = 15;  
-  }
-
-
-  if (difficulty == 4)
-  {
-    int OVERALL_DIFF;
-    int EXP_PERCENTAGE = 25;
-    int MONEY_PERCENTAGE = 15;  
-  }
-
-
-  if (difficulty == 5)
-  {
-    int OVERALL_DIFF;
-    int EXP_PERCENTAGE = 25;
-    int MONEY_PERCENTAGE = 15;  
-  }
 }
-
 
 
 
