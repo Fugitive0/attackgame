@@ -24,7 +24,7 @@ Things that the difficulty will positivitly affect
 2. Money you will get will increase by 5%
 */
 
-int gameDifficulty(int difficulty, )
+int gameDifficulty(int difficulty)
 {
   if (difficulty == 1)
   {
