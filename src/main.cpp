@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 #include "globalVar.h"
+#include <string>
+#include "Characters.h"
 
 using namespace std;
 
@@ -109,13 +111,16 @@ int menuSelection = 0;
 
 if (menuSelection == 1)
 {
-  cout << "Starting preGameLoop";
+  cout << "Starting preGameLoop"
+       << endl;
 }
 
 if (menuSelection == 2)
 {
   levelup();
+  cout << endl;
   menu();
+  cout << endl;
 
 }
 
@@ -148,7 +153,40 @@ int main ()
 menu();
 
 
+
+
+
+
 // Pre game loop
+
+
+
+
+int characterSelect; 
+
+cout << "Pick a character:"               
+     << endl
+     << "Warrior (1)"
+     << endl
+     << "Mage (2)"
+     << endl;
+
+cin >> characterSelect;
+cout << endl;
+
+if (characterSelect == 1)
+{
+  Warrior warrior;
+}
+
+if (characterSelect == 2)
+{
+  Mage mage;
+}
+
+
+
+// Gameloop
 
 
 
