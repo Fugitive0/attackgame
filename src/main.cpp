@@ -9,6 +9,8 @@ using namespace std;
 int OVERALL_ENEMY_DAMAGE = 50;
 int EXP_PERCENTAGE = 25;
 int MONEY_PERCENTAGE = 25;
+bool warriorChosen = false;
+bool mageChosen = false;
 
 /*
 The difficutly function will have an interger parameter that takes what difficulty
@@ -63,6 +65,11 @@ int gameDifficulty(int difficulty)
   
 }
 
+
+int random(int low, int high)
+{
+  return low + rand() % (high - low + 1);
+}
 /*
 The menu function have an interger paramerter and if that number is a specific number,
 will take them to a specific part of the menu
@@ -178,12 +185,30 @@ cout << endl;
 if (characterSelect == "1")
 {
   Warrior warrior;
+  warriorChosen = true;
 }
 
 if (characterSelect == "2")
 {
   Mage mage;
+  mageChosen = true;
 }
+
+
+// Ai character selection
+int randomCharcater = random(1, 50);
+
+if (warriorChosen == false)
+{
+  Warrior aiWarrior;
+}
+if (mageChosen == false)
+{
+  Mage aiMage;
+  cout << "Ai has chosen Mage!" << endl;
+}
+
+
 
 
 

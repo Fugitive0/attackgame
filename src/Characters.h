@@ -14,15 +14,10 @@ class Warrior
   Warrior()
   {
     bool isChosen = true;
-    std::cout << "Hello I am the warrior!"
-              << endl;
+    std::cout << "Hello I am the warrior!" << std::endl;
   }
 
   
-
-
-  // Check to see if this has been intialized 
-  // to prevent ai from chosing a character that your using
 
 
 
@@ -60,7 +55,11 @@ class Mage
 
 
 
-  // Check to see if this has been intialized to prevent ai from chosing a character that your using
+  Mage ()
+  {
+    bool isChosen = true;
+    std::cout << "Hello i am the mage!" << std::endl;
+  }
 
 
   int fireball(int enemyHealth)
