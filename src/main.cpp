@@ -1,13 +1,14 @@
 #include <stdlib.h>
 #include <iostream>
 #include <vector>
-#include "globalVar.h"
 #include <string>
 #include "Characters.h"
 
 using namespace std;
 
-
+int OVERALL_ENEMY_DAMAGE = 50;
+int EXP_PERCENTAGE = 25;
+int MONEY_PERCENTAGE = 25;
 
 /*
 The difficutly function will have an interger parameter that takes what difficulty
@@ -162,7 +163,7 @@ menu();
 
 
 
-int characterSelect; 
+string characterSelect; 
 
 cout << "Pick a character:"               
      << endl
@@ -174,12 +175,12 @@ cout << "Pick a character:"
 cin >> characterSelect;
 cout << endl;
 
-if (characterSelect == 1)
+if (characterSelect == "1")
 {
   Warrior warrior;
 }
 
-if (characterSelect == 2)
+if (characterSelect == "2")
 {
   Mage mage;
 }
@@ -188,13 +189,6 @@ if (characterSelect == 2)
 
 // Gameloop
 
-
-
-
-for (int i = 0; i < 10; i++)
-{
-  cout << "Hello world";
-}
 
 
 
